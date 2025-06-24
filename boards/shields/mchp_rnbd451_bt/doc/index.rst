@@ -124,19 +124,19 @@ use the following command.
 Append the above mentioned ``prj.conf`` configurations to each ``prj.conf`` in Example #1~#5. 
 Build the applications located in ``zephyr/samples/bluetooth`` using the following commands:
 
-+----+---------------------+----------------------------------------------------------------------------------------------------+
-| No | Example name        | Build command                                                                                      |
-+====+=====================+====================================================================================================+
-| 1  | Peripheral          | west build -p always -b sam_e54_xpro --shield rnbd451 zephyr/samples/bluetooth/peripheral          |
-+----+---------------------+----------------------------------------------------------------------------------------------------+
-| 2  | HID Peripheral      | west build -p always -b sam_e54_xpro --shield rnbd451 zephyr/samples/bluetooth/peripheral_hids     |
-+----+---------------------+----------------------------------------------------------------------------------------------------+
-| 3  | Peripheral Identity | west build -p always -b sam_e54_xpro --shield rnbd451 zephyr/samples/bluetooth/peripheral_identity |
-+----+---------------------+----------------------------------------------------------------------------------------------------+
-| 4  | Central Multilink   | west build -p always -b sam_e54_xpro --shield rnbd451 zephyr/samples/bluetooth/central_multilink   |
-+----+---------------------+----------------------------------------------------------------------------------------------------+
-| 5  | Central/Gatt Write  | west build -p always -b sam_e54_xpro --shield rnbd451 zephyr/samples/bluetooth/central_gatt_write  |
-+----+---------------------+----------------------------------------------------------------------------------------------------+
++----+---------------------+------------------------------------------------------------------------------------------------------------+
+| No | Example name        | Build command                                                                                              |
++====+=====================+============================================================================================================+
+| 1  | Peripheral          | west build -p always -b sam_e54_xpro --shield mchp_rnbd451_bt zephyr/samples/bluetooth/peripheral          |
++----+---------------------+------------------------------------------------------------------------------------------------------------+
+| 2  | HID Peripheral      | west build -p always -b sam_e54_xpro --shield mchp_rnbd451_bt zephyr/samples/bluetooth/peripheral_hids     |
++----+---------------------+------------------------------------------------------------------------------------------------------------+
+| 3  | Peripheral Identity | west build -p always -b sam_e54_xpro --shield mchp_rnbd451_bt zephyr/samples/bluetooth/peripheral_identity |
++----+---------------------+------------------------------------------------------------------------------------------------------------+
+| 4  | Central Multilink   | west build -p always -b sam_e54_xpro --shield mchp_rnbd451_bt zephyr/samples/bluetooth/central_multilink   |
++----+---------------------+------------------------------------------------------------------------------------------------------------+
+| 5  | Central/Gatt Write  | west build -p always -b sam_e54_xpro --shield mchp_rnbd451_bt zephyr/samples/bluetooth/central_gatt_write  |
++----+---------------------+------------------------------------------------------------------------------------------------------------+
 
 
 For more information on building the applications, refer to the `Building
