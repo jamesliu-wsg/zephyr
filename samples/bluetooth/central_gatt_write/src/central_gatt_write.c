@@ -83,6 +83,8 @@ uint32_t central_gatt_write(uint32_t count)
 {
 	int err;
 
+    k_sleep(K_MSEC(500));
+    
 	err = bt_enable(NULL);
 	if (err) {
 		printk("Bluetooth init failed (err %d)\n", err);

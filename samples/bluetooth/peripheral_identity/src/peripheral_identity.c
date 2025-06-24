@@ -230,6 +230,7 @@ int init_peripheral(uint8_t iterations)
 	size_t id_count;
 	int err;
 
+    k_sleep(K_MSEC(500));
 	err = bt_enable(NULL);
 	if (err) {
 		printk("Bluetooth init failed (err %d)\n", err);

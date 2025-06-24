@@ -419,6 +419,8 @@ int main(void)
 	char str[BT_UUID_STR_LEN];
 	int err;
 
+    k_sleep(K_MSEC(500));
+    
 	err = bt_enable(NULL);
 	if (err) {
 		printk("Bluetooth init failed (err %d)\n", err);

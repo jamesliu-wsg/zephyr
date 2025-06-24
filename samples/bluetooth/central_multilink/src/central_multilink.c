@@ -299,6 +299,8 @@ int init_central(uint8_t iterations)
 {
 	int err;
 
+    k_sleep(K_MSEC(500));
+    
 	err = bt_enable(NULL);
 	if (err) {
 		printk("Bluetooth init failed (err %d)\n", err);

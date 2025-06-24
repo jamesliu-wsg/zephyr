@@ -137,6 +137,8 @@ int main(void)
 {
 	int err;
 
+    k_sleep(K_MSEC(500));
+    
 	err = bt_enable(bt_ready);
 	if (err) {
 		printk("Bluetooth init failed (err %d)\n", err);
