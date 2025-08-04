@@ -111,6 +111,11 @@ by RNBD451, add the following::
 
    CONFIG_BT_HCI_ACL_FLOW_CONTROL=n
 
+To prevent the net-buffer from being drained during scan activity in the Central Multilink application, which can result in 
+Controller unresponsive error, increase CONFIG_BT_BUF_EVT_DISCARDABLE_COUNT from 3 to 12.
+
+   CONFIG_BT_BUF_EVT_DISCARDABLE_COUNT=12
+
 
 Build the Applications
 **********************
